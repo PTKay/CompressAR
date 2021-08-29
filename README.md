@@ -1,2 +1,2 @@
 # CompressAR
-Tool to compress and decompress AR files for Sonic Generations
+Tool to compress and decompress AR files for Sonic Generations, using 'makecab' and 'expand'.
