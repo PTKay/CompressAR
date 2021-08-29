@@ -37,8 +37,17 @@ namespace CompressAR
                 throw new InvalidOperationException("Invalid files specified. Files must be AR files");
             }
 
-            
-            ARCompressor.CompressFiles(files);
+            switch(args[0])
+            {
+                case "-c":
+                    ARCompressor.CompressFiles(files);
+                    break;
+                case "-d":
+                    ARCompressor.DecompressFiles(files);
+                    break;
+                default:
+                    throw new InvalidOperationException("Invalid operation mode specified");
+            }
         }
     }
 }
