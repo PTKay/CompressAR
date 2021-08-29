@@ -8,11 +8,6 @@ namespace CompressAR
     {
         public static void ExecuteCommand(string cmd, bool printOutput = false)
         {
-            var proc1 = new ProcessStartInfo();
-            proc1.UseShellExecute = true;
-
-            proc1.WorkingDirectory = @"C:\Windows\System32";
-
             Process proc = new Process
             {
                 StartInfo = new ProcessStartInfo
@@ -28,6 +23,7 @@ namespace CompressAR
 
             proc.Start();
             if (printOutput) Console.WriteLine(proc.StandardOutput.ReadToEnd());
+
             proc.WaitForExit();
         }
     }
