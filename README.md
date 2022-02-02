@@ -8,3 +8,5 @@ CompressAR.exe [-c | -d] [file [file2 ...] | dir]
 -c: Compress a file, multiple files or a directory
 -d: Decompress a file, multiple files or a directory
 ```
+
+Releases contain .bat scripts that support easy drag and drop usage
